@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    
+    let students = [
+    {name: 'Remy', cohort: 'Jan'},
+    {name: 'Genevieve', cohort: 'March'},
+    {name: 'Chuck', cohort: 'Jan'},
+    {name: 'Osmund', cohort: 'June'},
+    {name: 'Nikki', cohort: 'June'},
+    {name: 'Boris', cohort: 'June'}
+];
+
+        for( let i = 0; i < students.length; i++ ){
+            let str = ""
+            for( let key in students[i] ){
+                str += key[0].toUpperCase() + key.slice(1) + ": " + students[i][key]
+                if( key == "name"){
+                    str += ", ";
+                }
+            }
+                console.log( str )
+
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
